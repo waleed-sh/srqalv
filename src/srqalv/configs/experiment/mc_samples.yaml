@@ -1,0 +1,11 @@
+defaults:
+  - /settings/k5_highcutoff@_here_
+  - _self_
+
+name: mc_samples
+kind: mc_samples
+dataset: 04_k5_highcutoff_mc_samples
+order: 100
+sample_counts: [1024, 4096, 16384]
+probe_vertex: 0
+dense_check_max_dim: 512

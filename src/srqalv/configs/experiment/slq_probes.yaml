@@ -1,0 +1,10 @@
+defaults:
+  - /settings/slq@_here_
+  - _self_
+
+name: slq_probes
+dataset: 07_five_valent_probe_sweep_srq_slq
+two_js: [4, 4, 4, 4, 4]
+orders: [200]
+lanczos_steps: 16
+probe_values: [2, 8, 32, 128]

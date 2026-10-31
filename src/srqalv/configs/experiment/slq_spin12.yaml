@@ -1,0 +1,10 @@
+defaults:
+  - /settings/slq@_here_
+  - _self_
+
+name: slq_spin12
+dataset: 06_five_valent_spin12_srq_slq
+two_js: [24, 24, 24, 24, 24]
+orders: [20]
+lanczos_steps: 48
+probe_values: [64]

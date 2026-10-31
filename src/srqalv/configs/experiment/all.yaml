@@ -1,0 +1,9 @@
+name: all
+experiments:
+  - k5_expectations
+  - kernel
+  - dense_error
+  - mc_samples
+  - mc_orders
+  - slq_spin12
+  - slq_probes

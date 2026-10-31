@@ -1,0 +1,9 @@
+name: k5_expectations
+kind: k5_expectations
+dataset: 01_k5_low_cutoff_vertex_expectations
+cutoffs: [1, 2]
+orders: [5, 10, 20, 30, 50, 75, 100, 150, 200]
+iteration_lambda: analytic
+lambda_scan_order: 20
+embedding_seed: 1
+m_label: 'number of shifted systems $M$'

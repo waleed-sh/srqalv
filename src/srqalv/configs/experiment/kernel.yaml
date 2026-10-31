@@ -1,0 +1,10 @@
+name: kernel
+kind: kernel
+dataset: 02_k5_kernel_preservation
+cutoffs: [1, 2]
+orders: [5, 10, 20, 30, 50, 75, 100, 150, 200]
+lambda_mode: analytic
+embedding_seed: 1
+zero_rtol: 1.0e-12
+zero_atol: 1.0e-14
+plot_floor: 1.0e-18

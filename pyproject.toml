@@ -1,0 +1,38 @@
+[build-system]
+requires = ["scikit-build-core==0.11.6", "nanobind==2.12.0"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "srqalv"
+version = "0.1.0"
+description = "Reproducible SRQ volume-operator experiments"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = [
+  "numpy==2.4.6",
+  "scipy==1.17.1",
+  "matplotlib==3.10.9",
+  "jax==0.10.1",
+  "jaxlib==0.10.1",
+  "hydra-core==1.3.2",
+  "omegaconf==2.3.0",
+]
+
+[project.scripts]
+srqalv = "srqalv.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.scikit-build]
+cmake.source-dir = "native"
+cmake.build-type = "Release"
+wheel.packages = ["src/srqalv"]
+build.tool-args = ["-j4"]
+sdist.include = ["src/**", "native/**", "tests/**", "reproduce.sh"]
+sdist.exclude = ["outputs/**", "multirun/**", "reproduced/**"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
